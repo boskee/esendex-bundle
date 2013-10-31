@@ -1,0 +1,16 @@
+boskee_esendex_text_message:
+    pattern:  /
+    defaults: { _controller: "BoskeeEsendexBundle:Default:index" }
+
+boskee_esendex_text_message_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "BoskeeEsendexBundle:Default:show" }
+
+boskee_esendex_text_message_new:
+    pattern:  /new/{type}
+    defaults: { _controller: "BoskeeEsendexBundle:Default:new" }
+
+boskee_esendex_text_message_create:
+    pattern:  /create/{type}
+    defaults: { _controller: "BoskeeEsendexBundle:Default:create" }
+    requirements: { _method: post }

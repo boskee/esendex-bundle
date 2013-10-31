@@ -1,0 +1,14 @@
+parameters:
+    esendex.authentication.class: Esendex\Authentication\LoginAuthentication
+    esendex.dispatcher.class: Esendex\DispatchService
+
+services:
+#    boskee_esendex.example:
+#        class: %boskee_esendex.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
+    boskee_esendex.authentication:
+        class: "%esendex.authentication.class%"
+        arguments: [ %boskee_esendex.account_reference%, %boskee_esendex.username%, %boskee_esendex.password% ]
+    boskee_esendex.dispatcher:
+        class: "%esendex.dispatcher.class%"
+        arguments: [ "@boskee_esendex.authentication" ]
