@@ -14,7 +14,7 @@
     ],
     "require": {
         "php": ">=5.3.0",
-        "esendex/sdk": "~1.0"
+        "esendex/sdk": "dev-master"
     },
     "autoload": {
         "psr-0": { "Boskee\\EsendexBundle": "" }
