@@ -1,19 +1,27 @@
 {
     "name": "boskee/esendex-bundle",
+    "type": "symfony-bundle",
     "description": "Boskee Esendex Bundle for Symfony",
     "keywords": ["boskee", "esendex", "sms", "symfony", "bundle"],
     "homepage": "https://github.com/boskee/esendex-bundle",
-    "type": "library",
     "license": "MIT",
     "authors": [
         {
             "name": "Wojciech Zylinski",
-            "email": "w.zylinski@boskee.co.uk",
+            "email": "voitek@boskee.co.uk",
             "homepage": "http://boskee.co.uk/"
         }
     ],
+    "support": {
+        "email": "voitek@boskee.co.uk",
+        "issues": "https://github.com/boskee/esendex-bundle/issues",
+        "source": "https://github.com/boskee/esendex-bundle"
+    },
+    "minimum-stability": "dev",
     "require": {
-        "php": ">=5.3.0",
+        "php": ">=5.3.0"
+    },
+    "require-dev": {
         "esendex/sdk": "dev-master"
     },
     "autoload": {
